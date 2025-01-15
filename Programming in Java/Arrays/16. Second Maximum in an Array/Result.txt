@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        
+        if (size < 2) {
+            // If there are fewer than 2 elements, second maximum doesn't exist
+            System.out.println(0);
+            return;
+        }
+        
+        int max = Integer.MIN_VALUE, secMax = Integer.MIN_VALUE;
+        int[] arr = new int[size];
+        
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+            
+            if (arr[i] > max) {
+                secMax = max;  // Update second max to previous max
+                max = arr[i];  // Update max to current element
+            } else if (arr[i] > secMax && arr[i] < max) {
+                secMax = arr[i];  // Update second max if the current element is less than max but greater than secMax
+            }
+        }
+        
+        if (secMax == Integer.MIN_VALUE) {
+            System.out.println(0);
+        } else {
+            System.out.println(secMax);
+        }
+        
+        sc.close();
+    }
+}

@@ -1,0 +1,21 @@
+class Result {
+    static long power(int base, int exp) {
+        // Handle base cases
+        if (exp < 0) {
+            return -1;  // Exponent is negative, invalid case
+        }
+        if (exp == 0) {
+            return 1;  // Base raised to 0 is always 1
+        }
+        
+        // Recursive step
+        long halfPower = power(base, exp / 2);  // Calculate power(base, exp // 2)
+        
+        if (exp % 2 == 0) {
+            return halfPower * halfPower;  // If exponent is even, square the result
+        } else {
+            return base * halfPower * halfPower;  // If odd, multiply base with the squared result
+        }
+    }
+}
+
