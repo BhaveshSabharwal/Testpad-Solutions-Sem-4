@@ -1,0 +1,5 @@
+Ques 1. Which of the given options is not a Linux Based OS?
+Ans - macOS / OSX
+
+Ques 2. Linux is which kind of Operating System?
+Ans - All of the mentioned

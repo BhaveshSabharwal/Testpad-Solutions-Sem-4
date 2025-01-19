@@ -1,0 +1,3 @@
+Ques - What are the outputs when the following commands are run on the terminal?
+1.)whoami
+Ans - root

@@ -1,13 +1,18 @@
 Variable-1
-ans-  Annual Expenses
-      G4
-      _average
-      ABC
+Ques - Which of the following can be used in a Java program as valid identifiers?
+Ans -  Annual Expenses
+       G4
+       _average
+       ABC
 
-Variable-2 
+Variable-2
+Ques - Following expression (1.1 + 0.2 + 1.1 + 2.2) should likely be equal 4.6, but in Java it does not. Why not? 
 ans- Real numbers are represented as imprecise floating-point numbers in the computer, and the limited precision led to a roundoff error
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Expressions -1 
+What is the output produced from the following statements? (Treat tabs as aligning to every multiple of eight spaces.)
 ans  1.
 name    age     height
 Amit    25      59

@@ -1,0 +1,10 @@
+Ques - What will be the commands written to find out the info pages of the given commands.
+
+1.) ls
+Ans - info ls
+
+2.)cat
+Ans - info cat
+
+3.)man
+ANs - info man
